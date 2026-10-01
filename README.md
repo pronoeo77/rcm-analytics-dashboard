@@ -1,63 +1,130 @@
-# RCM Intelligence — Executive Analytics Dashboard
+# RCM Intelligence | Executive Analytics Dashboard
 
-A responsive, interactive **React + Recharts** portfolio dashboard demonstrating revenue cycle management (RCM) analytics, metric transparency, and a Python-to-Excel validation workflow.
+**Interactive Revenue Cycle Management Analytics | React • JavaScript • Recharts • Data Visualization**
 
-> **PUBLIC DEMO NOTICE:** Every figure, payer name, and operational example in the live dashboard is **synthetic**. No patient records, source assessment workbook, employer correspondence, or original assessment data are included. Dashboard demo values are **not** the submitted assessment results.
+[**View Live Interactive Dashboard**](https://pronoeo77.github.io/rcm-analytics-dashboard/) | [**View Source Code**](https://github.com/pronoeo77/rcm-analytics-dashboard)
 
-## Features
+## Project Overview
 
-- Executive overview with interactive payer filter, collection-rate visualization, and first-denial recovery illustration
-- Revenue reconciliation and procedure/carrier variance table
-- Denial code frequencies, repeat denials, and first-denial eligibility waterfall
-- Payer response times and carrier scorecard
-- **Searchable, expandable metric definitions** documenting business meaning, formula, and limitations (40+ definitions)
-- Python/Excel validation explanation and tolerance rules
-- Responsive desktop/mobile layout
+RCM Intelligence is an interactive analytics dashboard designed to demonstrate how healthcare revenue cycle data can be transformed into meaningful operational and financial insights.
 
-## Run locally
+The project combines financial performance analysis, denial trends, payer comparisons, and transparent metric definitions in a responsive executive reporting interface.
 
-Requirements: Node.js 20.19+ or 22.12+ and npm.
+It showcases the application of analytical thinking, JavaScript development, interactive visualization, and data-quality methodology to business reporting.
+
+**Data Privacy:** All dashboard figures, payer names, and operational examples are synthetic. No patient information, proprietary datasets, employer records, or original assessment results are published.
+
+## Interactive Dashboard
+
+Explore the live application:
+
+**https://pronoeo77.github.io/rcm-analytics-dashboard/**
+
+### Executive Overview
+- Interactive payer filtering
+- Collection-rate visualization
+- Financial performance indicators
+- First-denial recovery illustration
+
+### Revenue Analytics
+- Revenue reconciliation
+- Procedure and carrier variance comparisons
+- Financial performance reporting
+
+### Denial Analytics
+- Denial code frequency analysis
+- Repeat-denial identification
+- First-denial eligibility waterfall
+
+### Payer Performance
+- Payer response-time comparisons
+- Carrier performance scorecards
+- Operational performance indicators
+
+### Metric Definitions and Validation
+- More than 40 searchable, expandable metric definitions
+- Documented calculations, assumptions, and limitations
+- Python-to-Excel validation methodology
+- Reconciliation and tolerance considerations
+
+## Technical Stack
+
+| Technology | Application |
+|---|---|
+| JavaScript | Dashboard functionality and interactive reporting |
+| React | Component-based user interface |
+| Recharts | Interactive data visualizations |
+| HTML and CSS | Responsive dashboard layout |
+| Vite | Development and production builds |
+| Git and GitHub | Version control and source-code management |
+| GitHub Actions | Automated deployment |
+| GitHub Pages | Public website hosting |
+| Python and Excel | Documented data-processing and validation workflow |
+
+## Analytical Skills Demonstrated
+
+**Financial Analytics:** Revenue reconciliation, collection-rate analysis, and variance reporting.
+
+**Operational Analytics:** Denial trends, payer response times, and recovery-related measures.
+
+**Business Intelligence:** Interactive dashboards, performance indicators, filtering, and executive reporting.
+
+**Data Quality:** Metric definitions, reconciliation logic, calculation transparency, and documentation of analytical limitations.
+
+**Software Development:** React development, JavaScript programming, responsive design, Git version control, and automated website deployment.
+
+## Project Architecture
+
+- `src/main.jsx` — Interactive dashboard views, filters, and charts
+- `src/data.js` — Synthetic demonstration data and metric definitions
+- `src/style.css` — Responsive interface styling
+- `docs/METHODOLOGY.md` — Calculation methodology and interpretation notes
+- `python/README.md` — Documentation of the Python/Excel workflow and public-sharing boundaries
+- `.github/workflows/deploy.yml` — Automated GitHub Pages deployment
+
+## Data Methodology and Transparency
+
+The dashboard emphasizes clearly defined metrics and reproducible analytical reasoning.
+
+The methodology documentation discusses revenue reconciliation, denial-related calculations, and interpretation limitations.
+
+For example, the documented original assessment methodology compared the earliest payment overall with the earliest denial by Charge ID. This is distinct from identifying the earliest payment occurring after a denial.
+
+That distinction is explicitly documented to avoid misrepresenting the analytical results.
+
+See [Methodology Documentation](docs/METHODOLOGY.md) for additional details.
+
+## Run Locally
+
+Requires Node.js 20.19+ or 22.12+ and npm.
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open the URL printed by Vite (typically `http://localhost:5173`).
-
-To create the production bundle:
+To create a production build:
 
 ```bash
 npm run build
 npm run preview
 ```
 
-## Publish to GitHub Pages
+## Future Enhancements
 
-1. Create a public repository named `rcm-analytics-dashboard` under `pronoeo77`.
-2. Push this project to the `main` branch.
-3. In GitHub, open **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-4. The included workflow deploys on pushes to `main`.
-5. Your site will be available at `https://pronoeo77.github.io/rcm-analytics-dashboard/` after a successful deployment.
-
-The Vite `base` is already set to `/rcm-analytics-dashboard/`. If you rename the repository, change `base` in `vite.config.js`.
-
-## Metric methodology
-
-See `docs/METHODOLOGY.md` and the **Metric definitions** tab in the dashboard. The original assessment Q1 methodology compared **earliest payment overall** to **earliest denial** by Charge ID. It did not identify the earliest payment *after* a denial when earlier payments existed. The demo documents that limitation rather than silently altering the original interpretation.
-
-## Architecture
-
-- `src/data.js`: synthetic, human-readable example data and metric definitions
-- `src/main.jsx`: interactive views, filters, drill-down definitions, and charts
-- `src/style.css`: responsive executive dashboard design
-- `docs/METHODOLOGY.md`: calculation guide and interpretation notes
-- `python/README.md`: notes on the private assessment generator and public sharing boundaries
-
-## Planned extension
-
-Add an optional **local-only import** of a sanitized summary JSON export from the Python generator, with schema checks and no server upload. Do not publish or commit proprietary source records.
+- Optional local import of sanitized analytical summaries
+- Input schema validation
+- Expanded interactive reporting capabilities
+- Additional data-quality and reconciliation checks
 
 ## Author
 
-Nicolas Cuervo · [GitHub @pronoeo77](https://github.com/pronoeo77)
+**Nicolas Cuervo**
+
+Analytics • Financial Reporting • Business Intelligence • Automation • Software Development
+
+[GitHub Portfolio](https://github.com/pronoeo77)
+
+---
+
+*Portfolio demonstration using synthetic data. The application is not a production healthcare reporting system.*
