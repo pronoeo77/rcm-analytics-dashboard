@@ -3,6 +3,7 @@
 **Interactive Revenue Cycle Management Analytics | React • JavaScript • Recharts • Data Visualization**
 
 [**View Live Interactive Dashboard**](https://pronoeo77.github.io/rcm-analytics-dashboard/) | [**View Source Code**](https://github.com/pronoeo77/rcm-analytics-dashboard)
+![RCM Intelligence Executive Dashboard](RCM%20Analytics%20Dashboard.png)
 
 ## Project Overview
 
